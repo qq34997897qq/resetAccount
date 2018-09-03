@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Query Login</title>
+<link rel="stylesheet" href="${request.contextPath}/layui/css/layui.css">
+<link rel="stylesheet" href="${request.contextPath}/css/style.css">
+</head>
+<body class="body">
+	<div class="layui-form layui-form-pane" action="">
+		
+		<div class="layui-form-item" pane="">
+			<label class="layui-form-label">From File</label>
+			<div class="layui-input-block">
+				<input type="radio" name="from_file" lay-filter="from_file"
+					value="Y" title="Yes" id="byfile"> <input type="radio"
+					name="from_file" lay-filter="from_file" value="N" title="No"
+					checked="" id="byhand">
+			</div>
+		</div>
+		<div class="layui-form-item" id="divaccount">
+			<label class="layui-form-label">Account</label>
+			<div class="layui-input-block">
+				<input type="text" id="account" name="account" autocomplete="off"
+					placeholder="Please input acc number or login name, , multiple separate with ','"
+					class="layui-input">
+			</div>
+		</div>
+		<div class="layui-form-item" style="display:none" id="divfile">
+			<label class="layui-form-label">Account File</label>
+			<form id="uploadForm" method="post" enctype="multipart/form-data">
+				<input type="file" id="file" name="file" />
+			</form>
+		</div>
+
+		<div class="layui-form-item">
+			<div class="layui-input-block">
+				<button class="layui-btn" onclick="getContactInfo()">Query</button>
+				<button  class="layui-btn layui-btn-primary " id="clear">Clear</button>
+			</div>
+		</div> 
+	</div>
+	<div id="fileResult"></div>
+	
+<script src="${request.contextPath}/layui/layui.js" charset="utf-8"></script>
+<script src="${request.contextPath}/js/jquery.min.js" charset="utf-8"></script>
+<script src="${request.contextPath}/js/nav.js" charset="utf-8"></script>
+<script>
+layui.use('form', function() {
+	var form = layui.form;
+	form.on('radio(from_file)',function(data){
+		if(data.value=="Y"){
+		 $("#divfile").show();
+		 $("#divaccount").hide();
+		}else{
+		$("#divfile").hide();
+		$("#divaccount").show();
+		
+		}
+	});
+});
+		
+		$("#clear").click(function(){
+			$("#fileResult").html("");
+		});
+			
+
+		function getContactInfo() {
+
+			if ($('#byfile').is(':checked')) {//文件
+				getContactInfoByFile();
+			} else {
+				getContactInfoByHand();
+
+			}
+		}
+
+		function getContactInfoByFile() {
+
+			if ($("#file").val() != "") {
+				var formData = new FormData($("#uploadForm")[0]);
+				$.ajax({
+							type : "POST",
+							data : formData,
+							processData : false,
+							contentType : false,
+							url : "/user_contact/query/contact_info/by_file",
+							success : function(result) {
+							showResult(result);
+						
+							}
+						});
+
+			} else {
+				alert("请选择文件");
+			}
+		}
+
+		function getContactInfoByHand() {//查找 
+
+			var url;
+			var account = $("#account").val();
+		
+			if (account == "") {
+				alert("不能为空");
+			} else {
+				$.ajax({
+					type : "GET",
+					url : "/user_contact/query/contact_info/acc_num",
+					contentType:"application/json; charset=utf-8",
+					dataType : "json",
+					data : {
+						"account" : "" + account + ""
+					},
+					
+					success : function(result) {
+						showResult(result);
+						//alert("查询成功");
+					}
+				});
+
+			}
+
+		}
+
+		function showResult(result) { //结果显示
+
+			str = "<table class='layui-table'>"
+				+ "<colgroup>"
+				+ "    <col width='150'>"
+				+ "    <col width='150'>"
+				+ "</colgroup>"
+				+ "<thead>"
+				+ "<tr>"
+				+ "    <th>Acc Num</th>"
+				+ "    <th>email1</th>"
+				+ "    <th>email2</th>"
+				+ "    <th>phone1</th>"
+				+ "    <th>areaCode1</th>"
+				+ "    <th>phone2</th>"
+				+ "    <th>areaCode2</th>"
+				+ "</tr>"
+				+ "</thead>";
+
+			$.each(result, function(index, item) {
+				str += "<tbody><tr>" + 
+				"<td>"+ item.accNum + "</td>"+
+				"<td>"+ item.email1 + "</td>"+ 
+				"<td>"+ item.email2 + "</td>"+ 
+				"<td>"+ item.phone1 + "</td>"+ 
+				"<td>"+ item.areaCode1 + "</td>"+ 
+				"<td>"+ item.phone2 + "</td>"+ 
+				"<td>"+ item.areaCode2 + "</td>"+ 
+				"</tr></tbody>"
+			});
+
+			str += "</table>";
+			$("#fileResult").html(str);
+		}
+
+		
+	</script>
+</body>
+</html>

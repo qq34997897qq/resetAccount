@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gotrade.web.admin.dao.portal.WebLoginDao">
+	<resultMap id="webLoginMapping" type="com.gotrade.web.admin.domain.WebLoginInfo">
+		<result column="acc_num" property="accNum" javaType="String" />
+		<result column="login_name" property="loginName" javaType="String" />
+	</resultMap>
+	<select id="getWebLoginInfoListByAccNum" resultMap="webLoginMapping">
+		SELECT DISTINCT SUBSTRING(acc_num, 0, 10) AS acc_num,l.login_name AS login_name FROM wp_login_tbl l,wp_login_acc_tbl a WHERE l.login_id = a.login_id AND 
+		<foreach item="item" index="index" collection="array" open="(" separator="OR" close=")"> 
+			acc_num LIKE #{item} || '%'  
+		</foreach>   
+	</select>
+	<select id="getWebLoginInfoListByLoginName" resultMap="webLoginMapping">
+		SELECT DISTINCT SUBSTRING(acc_num, 0, 10) AS acc_num,l.login_name AS login_name FROM wp_login_tbl l,wp_login_acc_tbl a WHERE l.login_id = a.login_id AND login_name IN 
+		<foreach item="item" index="index" collection="array" open="(" separator="," close=")">
+			#{item}	
+		</foreach>
+	</select> 
+	
+	<update id="updateWebLoginInfoByAccNum">
+		UPDATE wp_login_tbl SET login_attempt=#{webLoginInfo.loginAttempt},is_first_login=#{webLoginInfo.firstLogin},is_block=#{webLoginInfo.blockLogin},last_change_password_dt=#{webLoginInfo.lastChangePwdTime},login_password=md5(#{webLoginInfo.password})
+		 WHERE login_name in (select login_name FROM wp_login_tbl l,wp_login_acc_tbl a WHERE l.login_id = a.login_id AND 
+		<foreach item="item" index="index" collection="accNums" open="(" separator="OR" close=")">
+		acc_num LIKE #{item} || '%'
+		</foreach>
+		)
+    </update>	 
+	
+    <update id="updateWebLoginInfoByLoginName">
+    UPDATE wp_login_tbl SET login_attempt=#{webLoginInfo.loginAttempt},is_first_login=#{webLoginInfo.firstLogin},is_block=#{webLoginInfo.blockLogin},last_change_password_dt=#{webLoginInfo.lastChangePwdTime},login_password=md5(#{webLoginInfo.password})
+     WHERE login_name IN
+	<foreach item="item" index="index" collection="loginNames" open="(" separator="," close=")">
+	#{item} 
+	</foreach>	
+    </update>	
+
+</mapper>

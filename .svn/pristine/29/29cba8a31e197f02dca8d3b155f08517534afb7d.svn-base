@@ -1,0 +1,18 @@
+package com.gotrade.web.admin.dao.portal;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
+
+import com.gotrade.web.admin.domain.WebLoginInfo;
+
+public interface WebLoginDao {
+
+	List<WebLoginInfo> getWebLoginInfoListByLoignName(String[] loginNames);
+	
+	List<WebLoginInfo> getWebLoginInfoListByAccNum(String[] accNums);
+	
+	int updateWebLoginInfoByLoginName(@Param("loginNames") String[] loginNames, @Param("webLoginInfo") WebLoginInfo webLoginInfo);
+	
+	int updateWebLoginInfoByAccNum(@Param("accNums") String[] accNums, @Param("webLoginInfo") WebLoginInfo webLoginInfo);
+}

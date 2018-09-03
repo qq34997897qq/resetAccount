@@ -1,0 +1,615 @@
+2018-09-03 09:06:34.970 web-admin-kits [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2d14h34m11s360ms367µs137ns).
+2018-09-03 09:29:11.722 web-admin-kits [main] INFO  com.gotrade.web.admin.Application - Starting Application on ARVIN with PID 25812 (C:\workspace\web-admin-kits\target\classes started by arvin.feng in C:\workspace\web-admin-kits)
+2018-09-03 09:29:11.727 web-admin-kits [main] DEBUG com.gotrade.web.admin.Application - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-09-03 09:29:11.735 web-admin-kits [main] INFO  com.gotrade.web.admin.Application - The following profiles are active: dev
+2018-09-03 09:29:12.714 web-admin-kits [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\workspace\web-admin-kits\target\classes\com\gotrade\web\admin\dao\broker\UserDao.class]
+2018-09-03 09:29:12.715 web-admin-kits [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userDao' and 'com.gotrade.web.admin.dao.broker.UserDao' mapperInterface
+2018-09-03 09:29:12.720 web-admin-kits [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\workspace\web-admin-kits\target\classes\com\gotrade\web\admin\dao\portal\WebLoginDao.class]
+2018-09-03 09:29:12.720 web-admin-kits [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'webLoginDao' and 'com.gotrade.web.admin.dao.portal.WebLoginDao' mapperInterface
+2018-09-03 09:29:14.775 web-admin-kits [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2018-09-03 09:29:15.066 web-admin-kits [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\workspace\web-admin-kits\target\classes\mapper\broker\user.xml]'
+2018-09-03 09:29:15.107 web-admin-kits [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2018-09-03 09:29:15.136 web-admin-kits [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\workspace\web-admin-kits\target\classes\mapper\portal\weblogin.xml]'
+2018-09-03 09:29:15.191 web-admin-kits [main] DEBUG o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-09-03 09:29:15.191 web-admin-kits [main] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-09-03 09:29:15.206 web-admin-kits [main] DEBUG o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-09-03 09:29:15.207 web-admin-kits [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-09-03 09:29:15.208 web-admin-kits [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-09-03 09:29:15.209 web-admin-kits [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2018-09-03 09:29:15.211 web-admin-kits [main] DEBUG o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-09-03 09:29:15.211 web-admin-kits [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2018-09-03 09:29:15.212 web-admin-kits [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2018-09-03 09:29:15.212 web-admin-kits [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-09-03 09:29:15.213 web-admin-kits [main] DEBUG o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-09-03 09:29:15.238 web-admin-kits [main] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-09-03 09:29:15.240 web-admin-kits [main] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-09-03 09:29:15.241 web-admin-kits [main] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-09-03 09:29:15.242 web-admin-kits [main] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-09-03 09:29:15.244 web-admin-kits [main] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-09-03 09:29:16.865 web-admin-kits [main] ERROR o.a.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-9000]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-9000]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.gotrade.web.admin.Application.main(Application.java:11)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+2018-09-03 09:29:16.937 web-admin-kits [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 9000 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 9000, or configure this application to listen on another port.
+
+2018-09-03 09:29:35.430 web-admin-kits [background-preinit] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-09-03 09:29:35.439 web-admin-kits [background-preinit] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-09-03 09:29:35.440 web-admin-kits [background-preinit] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-09-03 09:29:35.440 web-admin-kits [background-preinit] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-09-03 09:29:35.440 web-admin-kits [background-preinit] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-09-03 09:29:35.599 web-admin-kits [main] INFO  com.gotrade.web.admin.Application - Starting Application on ARVIN with PID 26012 (C:\workspace\web-admin-kits\target\classes started by arvin.feng in C:\workspace\web-admin-kits)
+2018-09-03 09:29:35.602 web-admin-kits [main] DEBUG com.gotrade.web.admin.Application - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-09-03 09:29:35.602 web-admin-kits [main] INFO  com.gotrade.web.admin.Application - The following profiles are active: dev
+2018-09-03 09:29:37.014 web-admin-kits [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\workspace\web-admin-kits\target\classes\com\gotrade\web\admin\dao\broker\UserDao.class]
+2018-09-03 09:29:37.015 web-admin-kits [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userDao' and 'com.gotrade.web.admin.dao.broker.UserDao' mapperInterface
+2018-09-03 09:29:37.029 web-admin-kits [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\workspace\web-admin-kits\target\classes\com\gotrade\web\admin\dao\portal\WebLoginDao.class]
+2018-09-03 09:29:37.029 web-admin-kits [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'webLoginDao' and 'com.gotrade.web.admin.dao.portal.WebLoginDao' mapperInterface
+2018-09-03 09:29:41.035 web-admin-kits [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2018-09-03 09:29:41.568 web-admin-kits [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\workspace\web-admin-kits\target\classes\mapper\broker\user.xml]'
+2018-09-03 09:29:41.658 web-admin-kits [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2018-09-03 09:29:41.707 web-admin-kits [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\workspace\web-admin-kits\target\classes\mapper\portal\weblogin.xml]'
+2018-09-03 09:29:41.820 web-admin-kits [main] DEBUG o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-09-03 09:29:41.821 web-admin-kits [main] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-09-03 09:29:41.846 web-admin-kits [main] DEBUG o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-09-03 09:29:41.848 web-admin-kits [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-09-03 09:29:41.850 web-admin-kits [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-09-03 09:29:41.851 web-admin-kits [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2018-09-03 09:29:41.853 web-admin-kits [main] DEBUG o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-09-03 09:29:41.853 web-admin-kits [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2018-09-03 09:29:41.854 web-admin-kits [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2018-09-03 09:29:41.854 web-admin-kits [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-09-03 09:29:41.855 web-admin-kits [main] DEBUG o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-09-03 09:29:41.872 web-admin-kits [main] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-09-03 09:29:41.875 web-admin-kits [main] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-09-03 09:29:41.876 web-admin-kits [main] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-09-03 09:29:41.876 web-admin-kits [main] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-09-03 09:29:41.877 web-admin-kits [main] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-09-03 09:29:46.403 web-admin-kits [main] INFO  com.gotrade.web.admin.Application - Started Application in 11.522 seconds (JVM running for 12.118)
+2018-09-03 09:30:35.815 web-admin-kits [http-nio-9000-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-09-03 09:30:35.823 web-admin-kits [http-nio-9000-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a679886] was not registered for synchronization because synchronization is not active
+2018-09-03 09:30:35.924 web-admin-kits [http-nio-9000-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-09-03 09:30:36.131 web-admin-kits [http-nio-9000-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-09-03 09:30:36.138 web-admin-kits [http-nio-9000-exec-6] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1735459656 wrapping org.postgresql.jdbc.PgConnection@394e7e0e] will not be managed by Spring
+2018-09-03 09:30:36.146 web-admin-kits [http-nio-9000-exec-6] DEBUG c.g.w.a.d.p.W.updateWebLoginInfoByAccNum - ==>  Preparing: UPDATE wp_login_tbl SET login_attempt=?,is_first_login=?,is_block=?,last_change_password_dt=?,login_password=md5(?) WHERE login_name in (select login_name FROM wp_login_tbl l,wp_login_acc_tbl a WHERE l.login_id = a.login_id AND ( acc_num LIKE ? || '%' OR acc_num LIKE ? || '%' OR acc_num LIKE ? || '%' OR acc_num LIKE ? || '%' OR acc_num LIKE ? || '%' ) ) 
+2018-09-03 09:30:36.182 web-admin-kits [http-nio-9000-exec-6] DEBUG c.g.w.a.d.p.W.updateWebLoginInfoByAccNum - ==> Parameters: 1(Integer), N(String), N(String), 2018-09-20 09:30:35.0(Timestamp), 12345678(String), 27171000(String), 027171000(String), 036571500(String), 019560197(String),  (String)
+2018-09-03 09:30:36.299 web-admin-kits [http-nio-9000-exec-6] DEBUG c.g.w.a.d.p.W.updateWebLoginInfoByAccNum - <==    Updates: 3
+2018-09-03 09:30:36.300 web-admin-kits [http-nio-9000-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a679886]
+2018-09-03 09:30:36.304 web-admin-kits [http-nio-9000-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-09-03 09:30:36.304 web-admin-kits [http-nio-9000-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@322518ca] was not registered for synchronization because synchronization is not active
+2018-09-03 09:30:36.308 web-admin-kits [http-nio-9000-exec-6] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1337093068 wrapping org.postgresql.jdbc.PgConnection@394e7e0e] will not be managed by Spring
+2018-09-03 09:30:36.309 web-admin-kits [http-nio-9000-exec-6] DEBUG c.g.w.a.d.p.W.getWebLoginInfoListByAccNum - ==>  Preparing: SELECT DISTINCT SUBSTRING(acc_num, 0, 10) AS acc_num,l.login_name AS login_name FROM wp_login_tbl l,wp_login_acc_tbl a WHERE l.login_id = a.login_id AND ( acc_num LIKE ? || '%' OR acc_num LIKE ? || '%' OR acc_num LIKE ? || '%' OR acc_num LIKE ? || '%' OR acc_num LIKE ? || '%' ) 
+2018-09-03 09:30:36.309 web-admin-kits [http-nio-9000-exec-6] DEBUG c.g.w.a.d.p.W.getWebLoginInfoListByAccNum - ==> Parameters: 27171000(String), 027171000(String), 036571500(String), 019560197(String),  (String)
+2018-09-03 09:30:36.394 web-admin-kits [http-nio-9000-exec-6] DEBUG c.g.w.a.d.p.W.getWebLoginInfoListByAccNum - <==      Total: 3
+2018-09-03 09:30:36.400 web-admin-kits [http-nio-9000-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@322518ca]
+2018-09-03 09:31:30.698 web-admin-kits [http-nio-9000-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-09-03 09:31:30.699 web-admin-kits [http-nio-9000-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31fbfbc4] was not registered for synchronization because synchronization is not active
+2018-09-03 09:31:30.718 web-admin-kits [http-nio-9000-exec-10] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@264325627 wrapping org.postgresql.jdbc.PgConnection@394e7e0e] will not be managed by Spring
+2018-09-03 09:31:30.718 web-admin-kits [http-nio-9000-exec-10] DEBUG c.g.w.a.d.p.W.getWebLoginInfoListByAccNum - ==>  Preparing: SELECT DISTINCT SUBSTRING(acc_num, 0, 10) AS acc_num,l.login_name AS login_name FROM wp_login_tbl l,wp_login_acc_tbl a WHERE l.login_id = a.login_id AND ( acc_num LIKE ? || '%' OR acc_num LIKE ? || '%' OR acc_num LIKE ? || '%' OR acc_num LIKE ? || '%' OR acc_num LIKE ? || '%' ) 
+2018-09-03 09:31:30.719 web-admin-kits [http-nio-9000-exec-10] DEBUG c.g.w.a.d.p.W.getWebLoginInfoListByAccNum - ==> Parameters: 27171000(String), 027171000(String), 036571500(String), 019560197(String),  (String)
+2018-09-03 09:31:30.784 web-admin-kits [http-nio-9000-exec-10] DEBUG c.g.w.a.d.p.W.getWebLoginInfoListByAccNum - <==      Total: 3
+2018-09-03 09:31:30.784 web-admin-kits [http-nio-9000-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31fbfbc4]
+2018-09-03 09:31:36.414 web-admin-kits [http-nio-9000-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-09-03 09:31:36.414 web-admin-kits [http-nio-9000-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23e67cbe] was not registered for synchronization because synchronization is not active
+2018-09-03 09:31:36.433 web-admin-kits [http-nio-9000-exec-7] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1136895443 wrapping org.postgresql.jdbc.PgConnection@394e7e0e] will not be managed by Spring
+2018-09-03 09:31:36.433 web-admin-kits [http-nio-9000-exec-7] DEBUG c.g.w.a.d.p.W.getWebLoginInfoListByLoginName - ==>  Preparing: SELECT DISTINCT SUBSTRING(acc_num, 0, 10) AS acc_num,l.login_name AS login_name FROM wp_login_tbl l,wp_login_acc_tbl a WHERE l.login_id = a.login_id AND login_name IN ( ? , ? , ? , ? ) 
+2018-09-03 09:31:36.434 web-admin-kits [http-nio-9000-exec-7] DEBUG c.g.w.a.d.p.W.getWebLoginInfoListByLoginName - ==> Parameters: login_name(String), 2717101111(String), 036571500(String), 019560197(String)
+2018-09-03 09:31:36.454 web-admin-kits [http-nio-9000-exec-7] DEBUG c.g.w.a.d.p.W.getWebLoginInfoListByLoginName - <==      Total: 4
+2018-09-03 09:31:36.455 web-admin-kits [http-nio-9000-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23e67cbe]
+2018-09-03 09:31:42.736 web-admin-kits [http-nio-9000-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-09-03 09:31:42.736 web-admin-kits [http-nio-9000-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7eabdd98] was not registered for synchronization because synchronization is not active
+2018-09-03 09:31:42.738 web-admin-kits [http-nio-9000-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2018-09-03 09:31:43.227 web-admin-kits [http-nio-9000-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2018-09-03 09:31:43.227 web-admin-kits [http-nio-9000-exec-9] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@193188955 wrapping oracle.jdbc.driver.T4CConnection@a67b7be] will not be managed by Spring
+2018-09-03 09:31:43.227 web-admin-kits [http-nio-9000-exec-9] DEBUG c.g.w.a.d.b.U.updateWebContactInfoByFile - ==>  Preparing: begin UPDATE go_ga_cust_tbl SET goacuemail=?,goacuemail2=?, goacucontactareacode=?,goacucontactareacode1=?, goacucontactphone=?,goacucontactphone1=? WHERE goacumasterloginid=? ; UPDATE go_ga_cust_tbl SET goacuemail=?,goacuemail2=?, goacucontactareacode=?,goacucontactareacode1=?, goacucontactphone=?,goacucontactphone1=? WHERE goacumasterloginid=? ; UPDATE go_ga_cust_tbl SET goacuemail=?,goacuemail2=?, goacucontactareacode=?,goacucontactareacode1=?, goacucontactphone=?,goacucontactphone1=? WHERE goacumasterloginid=? end; 
+2018-09-03 09:31:43.406 web-admin-kits [http-nio-9000-exec-9] DEBUG c.g.w.a.d.b.U.updateWebContactInfoByFile - ==> Parameters: email1(String), email2(String), areaCode1(String), areaCode2(String), phone1(String), phone2(String), accNum(String), (String), 777(String), 333(String), 555(String), 444(String), 666(String), 027171000(String), (String), b(String), c(String), e(String), d(String), f(String), 036571500(String)
+2018-09-03 09:31:44.034 web-admin-kits [http-nio-9000-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7eabdd98]
+2018-09-03 09:31:44.150 web-admin-kits [http-nio-9000-exec-9] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLException: ORA-06550: line 19, column 4:
+PL/SQL: ORA-00933: SQL command not properly ended
+ORA-06550: line 14, column 4:
+PL/SQL: SQL Statement ignored
+ORA-06550: line 19, column 7:
+PLS-00103: Encountered the symbol "end-of-file" when expecting one of the following:
+
+   begin case declare end exception exit for goto if loop mod
+   null pragma raise return select update while with
+   <an identifier> <a double-quoted d
+
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: begin      UPDATE go_ga_cust_tbl SET    goacuemail=?,goacuemail2=?,    goacucontactareacode=?,goacucontactareacode1=?,    goacucontactphone=?,goacucontactphone1=?    WHERE goacumasterloginid=?    ;     UPDATE go_ga_cust_tbl SET    goacuemail=?,goacuemail2=?,    goacucontactareacode=?,goacucontactareacode1=?,    goacucontactphone=?,goacucontactphone1=?    WHERE goacumasterloginid=?    ;     UPDATE go_ga_cust_tbl SET    goacuemail=?,goacuemail2=?,    goacucontactareacode=?,goacucontactareacode1=?,    goacucontactphone=?,goacucontactphone1=?    WHERE goacumasterloginid=?    end;
+### Cause: java.sql.SQLException: ORA-06550: line 19, column 4:
+PL/SQL: ORA-00933: SQL command not properly ended
+ORA-06550: line 14, column 4:
+PL/SQL: SQL Statement ignored
+ORA-06550: line 19, column 7:
+PLS-00103: Encountered the symbol "end-of-file" when expecting one of the following:
+
+   begin case declare end exception exit for goto if loop mod
+   null pragma raise return select update while with
+   <an identifier> <a double-quoted d
+
+; bad SQL grammar []; nested exception is java.sql.SQLException: ORA-06550: line 19, column 4:
+PL/SQL: ORA-00933: SQL command not properly ended
+ORA-06550: line 14, column 4:
+PL/SQL: SQL Statement ignored
+ORA-06550: line 19, column 7:
+PLS-00103: Encountered the symbol "end-of-file" when expecting one of the following:
+
+   begin case declare end exception exit for goto if loop mod
+   null pragma raise return select update while with
+   <an identifier> <a double-quoted d
+] with root cause
+java.sql.SQLException: ORA-06550: line 19, column 4:
+PL/SQL: ORA-00933: SQL command not properly ended
+ORA-06550: line 14, column 4:
+PL/SQL: SQL Statement ignored
+ORA-06550: line 19, column 7:
+PLS-00103: Encountered the symbol "end-of-file" when expecting one of the following:
+
+   begin case declare end exception exit for goto if loop mod
+   null pragma raise return select update while with
+   <an identifier> <a double-quoted d
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3923)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1385)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy76.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy62.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:294)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:63)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy63.updateWebContactInfoByFile(Unknown Source)
+	at com.gotrade.web.admin.service.impl.UserContactServiceImpl.updateWebContactInfoByFile(UserContactServiceImpl.java:31)
+	at com.gotrade.web.admin.controller.UserContactController.updateContactInfoByAccNum(UserContactController.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2018-09-03 09:33:57.811 web-admin-kits [http-nio-9000-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-09-03 09:33:57.812 web-admin-kits [http-nio-9000-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ffc9448] was not registered for synchronization because synchronization is not active
+2018-09-03 09:33:57.830 web-admin-kits [http-nio-9000-exec-8] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1607899561 wrapping oracle.jdbc.driver.T4CConnection@a67b7be] will not be managed by Spring
+2018-09-03 09:33:57.830 web-admin-kits [http-nio-9000-exec-8] DEBUG c.g.w.a.d.b.U.updateWebContactInfoByAccNum - ==>  Preparing: UPDATE go_ga_cust_tbl SET goacuemail=?,goacuemail2=?, goacucontactareacode=?,goacucontactareacode1=?, goacucontactphone=?,goacucontactphone1=? where goacumasterloginid in ( ? ) 
+2018-09-03 09:33:57.831 web-admin-kits [http-nio-9000-exec-8] DEBUG c.g.w.a.d.b.U.updateWebContactInfoByAccNum - ==> Parameters: 1(String), 1(String), 2(String), 2(String), 2(String), 2(String), 036571500(String)
+2018-09-03 09:33:57.970 web-admin-kits [http-nio-9000-exec-8] DEBUG c.g.w.a.d.b.U.updateWebContactInfoByAccNum - <==    Updates: 1
+2018-09-03 09:33:57.971 web-admin-kits [http-nio-9000-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ffc9448]
+2018-09-03 09:33:57.971 web-admin-kits [http-nio-9000-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-09-03 09:33:57.971 web-admin-kits [http-nio-9000-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5310f4a6] was not registered for synchronization because synchronization is not active
+2018-09-03 09:33:57.972 web-admin-kits [http-nio-9000-exec-8] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1797041873 wrapping oracle.jdbc.driver.T4CConnection@a67b7be] will not be managed by Spring
+2018-09-03 09:33:57.972 web-admin-kits [http-nio-9000-exec-8] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - ==>  Preparing: SELECT goacumasterloginid, goacuemail, goacuemail2, goacucontactareacode, goacucontactphone, goacucontactareacode1, goacucontactphone1 FROM go_ga_cust_tbl WHERE goacumasterloginid IN ( ? ) 
+2018-09-03 09:33:57.972 web-admin-kits [http-nio-9000-exec-8] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - ==> Parameters: 036571500(String)
+2018-09-03 09:33:58.116 web-admin-kits [http-nio-9000-exec-8] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - <==      Total: 1
+2018-09-03 09:33:58.117 web-admin-kits [http-nio-9000-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5310f4a6]
+2018-09-03 09:34:02.746 web-admin-kits [http-nio-9000-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-09-03 09:34:02.746 web-admin-kits [http-nio-9000-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@176c9dfb] was not registered for synchronization because synchronization is not active
+2018-09-03 09:34:02.767 web-admin-kits [http-nio-9000-exec-1] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@321409845 wrapping oracle.jdbc.driver.T4CConnection@a67b7be] will not be managed by Spring
+2018-09-03 09:34:02.767 web-admin-kits [http-nio-9000-exec-1] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - ==>  Preparing: SELECT goacumasterloginid, goacuemail, goacuemail2, goacucontactareacode, goacucontactphone, goacucontactareacode1, goacucontactphone1 FROM go_ga_cust_tbl WHERE goacumasterloginid IN ( ? ) 
+2018-09-03 09:34:02.768 web-admin-kits [http-nio-9000-exec-1] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - ==> Parameters: 036571500(String)
+2018-09-03 09:34:02.789 web-admin-kits [http-nio-9000-exec-1] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - <==      Total: 1
+2018-09-03 09:34:02.789 web-admin-kits [http-nio-9000-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@176c9dfb]
+2018-09-03 09:34:08.819 web-admin-kits [http-nio-9000-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-09-03 09:34:08.820 web-admin-kits [http-nio-9000-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@349f665f] was not registered for synchronization because synchronization is not active
+2018-09-03 09:34:08.838 web-admin-kits [http-nio-9000-exec-3] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1126294661 wrapping org.postgresql.jdbc.PgConnection@394e7e0e] will not be managed by Spring
+2018-09-03 09:34:08.838 web-admin-kits [http-nio-9000-exec-3] DEBUG c.g.w.a.d.p.W.getWebLoginInfoListByAccNum - ==>  Preparing: SELECT DISTINCT SUBSTRING(acc_num, 0, 10) AS acc_num,l.login_name AS login_name FROM wp_login_tbl l,wp_login_acc_tbl a WHERE l.login_id = a.login_id AND ( acc_num LIKE ? || '%' ) 
+2018-09-03 09:34:08.839 web-admin-kits [http-nio-9000-exec-3] DEBUG c.g.w.a.d.p.W.getWebLoginInfoListByAccNum - ==> Parameters: 036571500(String)
+2018-09-03 09:34:08.867 web-admin-kits [http-nio-9000-exec-3] DEBUG c.g.w.a.d.p.W.getWebLoginInfoListByAccNum - <==      Total: 1
+2018-09-03 09:34:08.867 web-admin-kits [http-nio-9000-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@349f665f]
+2018-09-03 09:34:11.089 web-admin-kits [http-nio-9000-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-09-03 09:34:11.089 web-admin-kits [http-nio-9000-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@366c3b49] was not registered for synchronization because synchronization is not active
+2018-09-03 09:34:11.108 web-admin-kits [http-nio-9000-exec-4] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1732505958 wrapping org.postgresql.jdbc.PgConnection@394e7e0e] will not be managed by Spring
+2018-09-03 09:34:11.108 web-admin-kits [http-nio-9000-exec-4] DEBUG c.g.w.a.d.p.W.getWebLoginInfoListByLoginName - ==>  Preparing: SELECT DISTINCT SUBSTRING(acc_num, 0, 10) AS acc_num,l.login_name AS login_name FROM wp_login_tbl l,wp_login_acc_tbl a WHERE l.login_id = a.login_id AND login_name IN ( ? ) 
+2018-09-03 09:34:11.108 web-admin-kits [http-nio-9000-exec-4] DEBUG c.g.w.a.d.p.W.getWebLoginInfoListByLoginName - ==> Parameters: 036571500(String)
+2018-09-03 09:34:11.126 web-admin-kits [http-nio-9000-exec-4] DEBUG c.g.w.a.d.p.W.getWebLoginInfoListByLoginName - <==      Total: 1
+2018-09-03 09:34:11.126 web-admin-kits [http-nio-9000-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@366c3b49]
+2018-09-03 09:36:41.597 web-admin-kits [main] INFO  com.gotrade.web.admin.Application - Starting Application on ARVIN with PID 6992 (C:\workspace\web-admin-kits\target\classes started by arvin.feng in C:\workspace\web-admin-kits)
+2018-09-03 09:36:41.615 web-admin-kits [main] DEBUG com.gotrade.web.admin.Application - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-09-03 09:36:41.618 web-admin-kits [main] INFO  com.gotrade.web.admin.Application - The following profiles are active: dev
+2018-09-03 09:36:42.537 web-admin-kits [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\workspace\web-admin-kits\target\classes\com\gotrade\web\admin\dao\broker\UserDao.class]
+2018-09-03 09:36:42.538 web-admin-kits [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userDao' and 'com.gotrade.web.admin.dao.broker.UserDao' mapperInterface
+2018-09-03 09:36:42.543 web-admin-kits [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\workspace\web-admin-kits\target\classes\com\gotrade\web\admin\dao\portal\WebLoginDao.class]
+2018-09-03 09:36:42.543 web-admin-kits [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'webLoginDao' and 'com.gotrade.web.admin.dao.portal.WebLoginDao' mapperInterface
+2018-09-03 09:36:44.570 web-admin-kits [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2018-09-03 09:36:44.836 web-admin-kits [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\workspace\web-admin-kits\target\classes\mapper\broker\user.xml]'
+2018-09-03 09:36:44.872 web-admin-kits [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2018-09-03 09:36:44.895 web-admin-kits [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\workspace\web-admin-kits\target\classes\mapper\portal\weblogin.xml]'
+2018-09-03 09:36:44.949 web-admin-kits [main] DEBUG o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-09-03 09:36:44.950 web-admin-kits [main] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-09-03 09:36:44.973 web-admin-kits [main] DEBUG o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-09-03 09:36:44.975 web-admin-kits [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-09-03 09:36:44.977 web-admin-kits [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-09-03 09:36:44.977 web-admin-kits [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2018-09-03 09:36:44.979 web-admin-kits [main] DEBUG o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-09-03 09:36:44.979 web-admin-kits [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2018-09-03 09:36:44.980 web-admin-kits [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2018-09-03 09:36:44.981 web-admin-kits [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-09-03 09:36:44.981 web-admin-kits [main] DEBUG o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-09-03 09:36:44.990 web-admin-kits [main] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-09-03 09:36:44.991 web-admin-kits [main] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-09-03 09:36:44.991 web-admin-kits [main] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-09-03 09:36:44.991 web-admin-kits [main] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-09-03 09:36:44.991 web-admin-kits [main] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-09-03 09:36:46.405 web-admin-kits [main] INFO  com.gotrade.web.admin.Application - Started Application in 5.494 seconds (JVM running for 6.089)
+2018-09-03 09:39:29.098 web-admin-kits [http-nio-9000-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-09-03 09:39:29.104 web-admin-kits [http-nio-9000-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2caa68cf] was not registered for synchronization because synchronization is not active
+2018-09-03 09:39:29.204 web-admin-kits [http-nio-9000-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-09-03 09:39:30.736 web-admin-kits [http-nio-9000-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-09-03 09:39:30.740 web-admin-kits [http-nio-9000-exec-3] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1498976207 wrapping oracle.jdbc.driver.T4CConnection@79380c94] will not be managed by Spring
+2018-09-03 09:39:30.744 web-admin-kits [http-nio-9000-exec-3] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - ==>  Preparing: SELECT goacumasterloginid, goacuemail, goacuemail2, goacucontactareacode, goacucontactphone, goacucontactareacode1, goacucontactphone1 FROM go_ga_cust_tbl WHERE goacumasterloginid IN ( ? , ? , ? , ? , ? ) 
+2018-09-03 09:39:30.914 web-admin-kits [http-nio-9000-exec-3] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - ==> Parameters: 27171000(String), 027171000(String), 036571500(String), 019560197(String),  (String)
+2018-09-03 09:39:31.965 web-admin-kits [http-nio-9000-exec-3] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - <==      Total: 3
+2018-09-03 09:39:31.967 web-admin-kits [http-nio-9000-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2caa68cf]
+2018-09-03 09:40:09.045 web-admin-kits [http-nio-9000-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-09-03 09:40:09.045 web-admin-kits [http-nio-9000-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5596e99b] was not registered for synchronization because synchronization is not active
+2018-09-03 09:40:09.066 web-admin-kits [http-nio-9000-exec-10] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1558477393 wrapping oracle.jdbc.driver.T4CConnection@79380c94] will not be managed by Spring
+2018-09-03 09:40:09.066 web-admin-kits [http-nio-9000-exec-10] DEBUG c.g.w.a.d.b.U.updateWebContactInfoByAccNum - ==>  Preparing: UPDATE go_ga_cust_tbl SET goacuemail=?,goacuemail2=?, goacucontactareacode=?,goacucontactareacode1=?, goacucontactphone=?,goacucontactphone1=? where goacumasterloginid in ( ? , ? ) 
+2018-09-03 09:40:09.071 web-admin-kits [http-nio-9000-exec-10] DEBUG c.g.w.a.d.b.U.updateWebContactInfoByAccNum - ==> Parameters: 66(String), 77(String), 88(String), 10(String), 99(String), 11(String), 019560197(String), 027171000(String)
+2018-09-03 09:40:09.155 web-admin-kits [http-nio-9000-exec-10] DEBUG c.g.w.a.d.b.U.updateWebContactInfoByAccNum - <==    Updates: 2
+2018-09-03 09:40:09.156 web-admin-kits [http-nio-9000-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5596e99b]
+2018-09-03 09:40:09.156 web-admin-kits [http-nio-9000-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-09-03 09:40:09.156 web-admin-kits [http-nio-9000-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@760cdacf] was not registered for synchronization because synchronization is not active
+2018-09-03 09:40:09.156 web-admin-kits [http-nio-9000-exec-10] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1106528493 wrapping oracle.jdbc.driver.T4CConnection@79380c94] will not be managed by Spring
+2018-09-03 09:40:09.156 web-admin-kits [http-nio-9000-exec-10] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - ==>  Preparing: SELECT goacumasterloginid, goacuemail, goacuemail2, goacucontactareacode, goacucontactphone, goacucontactareacode1, goacucontactphone1 FROM go_ga_cust_tbl WHERE goacumasterloginid IN ( ? , ? ) 
+2018-09-03 09:40:09.156 web-admin-kits [http-nio-9000-exec-10] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - ==> Parameters: 019560197(String), 027171000(String)
+2018-09-03 09:40:09.179 web-admin-kits [http-nio-9000-exec-10] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - <==      Total: 2
+2018-09-03 09:40:09.180 web-admin-kits [http-nio-9000-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@760cdacf]
+2018-09-03 09:40:28.953 web-admin-kits [http-nio-9000-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-09-03 09:40:28.953 web-admin-kits [http-nio-9000-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d4af40d] was not registered for synchronization because synchronization is not active
+2018-09-03 09:40:28.974 web-admin-kits [http-nio-9000-exec-1] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1425964836 wrapping oracle.jdbc.driver.T4CConnection@79380c94] will not be managed by Spring
+2018-09-03 09:40:28.974 web-admin-kits [http-nio-9000-exec-1] DEBUG c.g.w.a.d.b.U.updateWebContactInfoByFile - ==>  Preparing: begin UPDATE go_ga_cust_tbl SET goacuemail=?,goacuemail2=?, goacucontactareacode=?,goacucontactareacode1=?, goacucontactphone=?,goacucontactphone1=? WHERE goacumasterloginid=? ; UPDATE go_ga_cust_tbl SET goacuemail=?,goacuemail2=?, goacucontactareacode=?,goacucontactareacode1=?, goacucontactphone=?,goacucontactphone1=? WHERE goacumasterloginid=? ; UPDATE go_ga_cust_tbl SET goacuemail=?,goacuemail2=?, goacucontactareacode=?,goacucontactareacode1=?, goacucontactphone=?,goacucontactphone1=? WHERE goacumasterloginid=? end; 
+2018-09-03 09:40:28.975 web-admin-kits [http-nio-9000-exec-1] DEBUG c.g.w.a.d.b.U.updateWebContactInfoByFile - ==> Parameters: email1(String), email2(String), areaCode1(String), areaCode2(String), phone1(String), phone2(String), accNum(String), (String), 777(String), 333(String), 555(String), 444(String), 666(String), 027171000(String), (String), b(String), c(String), e(String), d(String), f(String), 036571500(String)
+2018-09-03 09:40:29.075 web-admin-kits [http-nio-9000-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d4af40d]
+2018-09-03 09:40:29.177 web-admin-kits [http-nio-9000-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLException: ORA-06550: line 19, column 4:
+PL/SQL: ORA-00933: SQL command not properly ended
+ORA-06550: line 14, column 4:
+PL/SQL: SQL Statement ignored
+ORA-06550: line 19, column 7:
+PLS-00103: Encountered the symbol "end-of-file" when expecting one of the following:
+
+   begin case declare end exception exit for goto if loop mod
+   null pragma raise return select update while with
+   <an identifier> <a double-quoted d
+
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: begin      UPDATE go_ga_cust_tbl SET    goacuemail=?,goacuemail2=?,    goacucontactareacode=?,goacucontactareacode1=?,    goacucontactphone=?,goacucontactphone1=?    WHERE goacumasterloginid=?    ;     UPDATE go_ga_cust_tbl SET    goacuemail=?,goacuemail2=?,    goacucontactareacode=?,goacucontactareacode1=?,    goacucontactphone=?,goacucontactphone1=?    WHERE goacumasterloginid=?    ;     UPDATE go_ga_cust_tbl SET    goacuemail=?,goacuemail2=?,    goacucontactareacode=?,goacucontactareacode1=?,    goacucontactphone=?,goacucontactphone1=?    WHERE goacumasterloginid=?    end;
+### Cause: java.sql.SQLException: ORA-06550: line 19, column 4:
+PL/SQL: ORA-00933: SQL command not properly ended
+ORA-06550: line 14, column 4:
+PL/SQL: SQL Statement ignored
+ORA-06550: line 19, column 7:
+PLS-00103: Encountered the symbol "end-of-file" when expecting one of the following:
+
+   begin case declare end exception exit for goto if loop mod
+   null pragma raise return select update while with
+   <an identifier> <a double-quoted d
+
+; bad SQL grammar []; nested exception is java.sql.SQLException: ORA-06550: line 19, column 4:
+PL/SQL: ORA-00933: SQL command not properly ended
+ORA-06550: line 14, column 4:
+PL/SQL: SQL Statement ignored
+ORA-06550: line 19, column 7:
+PLS-00103: Encountered the symbol "end-of-file" when expecting one of the following:
+
+   begin case declare end exception exit for goto if loop mod
+   null pragma raise return select update while with
+   <an identifier> <a double-quoted d
+] with root cause
+java.sql.SQLException: ORA-06550: line 19, column 4:
+PL/SQL: ORA-00933: SQL command not properly ended
+ORA-06550: line 14, column 4:
+PL/SQL: SQL Statement ignored
+ORA-06550: line 19, column 7:
+PLS-00103: Encountered the symbol "end-of-file" when expecting one of the following:
+
+   begin case declare end exception exit for goto if loop mod
+   null pragma raise return select update while with
+   <an identifier> <a double-quoted d
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3923)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1385)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy75.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy62.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:294)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:63)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy63.updateWebContactInfoByFile(Unknown Source)
+	at com.gotrade.web.admin.service.impl.UserContactServiceImpl.updateWebContactInfoByFile(UserContactServiceImpl.java:31)
+	at com.gotrade.web.admin.controller.UserContactController.updateContactInfoByAccNum(UserContactController.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2018-09-03 09:41:11.598 web-admin-kits [background-preinit] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-09-03 09:41:11.618 web-admin-kits [background-preinit] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-09-03 09:41:11.619 web-admin-kits [background-preinit] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-09-03 09:41:11.619 web-admin-kits [background-preinit] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-09-03 09:41:11.619 web-admin-kits [background-preinit] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-09-03 09:41:11.619 web-admin-kits [background-preinit] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-09-03 09:41:11.769 web-admin-kits [main] INFO  com.gotrade.web.admin.Application - Starting Application on ARVIN with PID 21368 (C:\workspace\web-admin-kits\target\classes started by arvin.feng in C:\workspace\web-admin-kits)
+2018-09-03 09:41:11.772 web-admin-kits [main] DEBUG com.gotrade.web.admin.Application - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-09-03 09:41:11.772 web-admin-kits [main] INFO  com.gotrade.web.admin.Application - The following profiles are active: dev
+2018-09-03 09:41:12.870 web-admin-kits [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\workspace\web-admin-kits\target\classes\com\gotrade\web\admin\dao\broker\UserDao.class]
+2018-09-03 09:41:12.871 web-admin-kits [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userDao' and 'com.gotrade.web.admin.dao.broker.UserDao' mapperInterface
+2018-09-03 09:41:12.876 web-admin-kits [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\workspace\web-admin-kits\target\classes\com\gotrade\web\admin\dao\portal\WebLoginDao.class]
+2018-09-03 09:41:12.876 web-admin-kits [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'webLoginDao' and 'com.gotrade.web.admin.dao.portal.WebLoginDao' mapperInterface
+2018-09-03 09:41:15.676 web-admin-kits [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2018-09-03 09:41:15.970 web-admin-kits [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\workspace\web-admin-kits\target\classes\mapper\broker\user.xml]'
+2018-09-03 09:41:16.010 web-admin-kits [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2018-09-03 09:41:16.039 web-admin-kits [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\workspace\web-admin-kits\target\classes\mapper\portal\weblogin.xml]'
+2018-09-03 09:41:16.126 web-admin-kits [main] DEBUG o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-09-03 09:41:16.127 web-admin-kits [main] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-09-03 09:41:16.159 web-admin-kits [main] DEBUG o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-09-03 09:41:16.161 web-admin-kits [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-09-03 09:41:16.162 web-admin-kits [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-09-03 09:41:16.164 web-admin-kits [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2018-09-03 09:41:16.166 web-admin-kits [main] DEBUG o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-09-03 09:41:16.166 web-admin-kits [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2018-09-03 09:41:16.166 web-admin-kits [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2018-09-03 09:41:16.168 web-admin-kits [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-09-03 09:41:16.169 web-admin-kits [main] DEBUG o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-09-03 09:41:16.180 web-admin-kits [main] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-09-03 09:41:16.181 web-admin-kits [main] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-09-03 09:41:16.181 web-admin-kits [main] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-09-03 09:41:16.181 web-admin-kits [main] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-09-03 09:41:16.182 web-admin-kits [main] DEBUG o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-09-03 09:41:18.021 web-admin-kits [main] INFO  com.gotrade.web.admin.Application - Started Application in 7.063 seconds (JVM running for 8.147)
+2018-09-03 09:41:26.520 web-admin-kits [http-nio-9000-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-09-03 09:41:26.528 web-admin-kits [http-nio-9000-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e5328c8] was not registered for synchronization because synchronization is not active
+2018-09-03 09:41:26.654 web-admin-kits [http-nio-9000-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-09-03 09:41:27.328 web-admin-kits [http-nio-9000-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-09-03 09:41:27.333 web-admin-kits [http-nio-9000-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1076269398 wrapping oracle.jdbc.driver.T4CConnection@1e9ac9ff] will not be managed by Spring
+2018-09-03 09:41:27.339 web-admin-kits [http-nio-9000-exec-2] DEBUG c.g.w.a.d.b.U.updateWebContactInfoByFile - ==>  Preparing: begin UPDATE go_ga_cust_tbl SET goacuemail=?,goacuemail2=?, goacucontactareacode=?,goacucontactareacode1=?, goacucontactphone=?,goacucontactphone1=? WHERE goacumasterloginid=?; UPDATE go_ga_cust_tbl SET goacuemail=?,goacuemail2=?, goacucontactareacode=?,goacucontactareacode1=?, goacucontactphone=?,goacucontactphone1=? WHERE goacumasterloginid=?; UPDATE go_ga_cust_tbl SET goacuemail=?,goacuemail2=?, goacucontactareacode=?,goacucontactareacode1=?, goacucontactphone=?,goacucontactphone1=? WHERE goacumasterloginid=?; end; 
+2018-09-03 09:41:27.537 web-admin-kits [http-nio-9000-exec-2] DEBUG c.g.w.a.d.b.U.updateWebContactInfoByFile - ==> Parameters: email1(String), email2(String), areaCode1(String), areaCode2(String), phone1(String), phone2(String), accNum(String), (String), 777(String), 333(String), 555(String), 444(String), 666(String), 027171000(String), (String), b(String), c(String), e(String), d(String), f(String), 036571500(String)
+2018-09-03 09:41:29.774 web-admin-kits [http-nio-9000-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e5328c8]
+2018-09-03 09:41:29.784 web-admin-kits [http-nio-9000-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-09-03 09:41:29.785 web-admin-kits [http-nio-9000-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7015b95c] was not registered for synchronization because synchronization is not active
+2018-09-03 09:41:29.848 web-admin-kits [http-nio-9000-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@40236548 wrapping oracle.jdbc.driver.T4CConnection@1e9ac9ff] will not be managed by Spring
+2018-09-03 09:41:29.848 web-admin-kits [http-nio-9000-exec-2] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - ==>  Preparing: SELECT goacumasterloginid, goacuemail, goacuemail2, goacucontactareacode, goacucontactphone, goacucontactareacode1, goacucontactphone1 FROM go_ga_cust_tbl WHERE goacumasterloginid IN ( ? , ? , ? ) 
+2018-09-03 09:41:29.848 web-admin-kits [http-nio-9000-exec-2] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - ==> Parameters: accNum(String), 027171000(String), 036571500(String)
+2018-09-03 09:41:31.214 web-admin-kits [http-nio-9000-exec-2] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - <==      Total: 2
+2018-09-03 09:41:31.215 web-admin-kits [http-nio-9000-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7015b95c]
+2018-09-03 09:50:52.785 web-admin-kits [http-nio-9000-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-09-03 09:50:52.785 web-admin-kits [http-nio-9000-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14d50c3c] was not registered for synchronization because synchronization is not active
+2018-09-03 09:50:52.805 web-admin-kits [http-nio-9000-exec-5] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@437444822 wrapping oracle.jdbc.driver.T4CConnection@1e9ac9ff] will not be managed by Spring
+2018-09-03 09:50:52.805 web-admin-kits [http-nio-9000-exec-5] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - ==>  Preparing: SELECT goacumasterloginid, goacuemail, goacuemail2, goacucontactareacode, goacucontactphone, goacucontactareacode1, goacucontactphone1 FROM go_ga_cust_tbl WHERE goacumasterloginid IN ( ? ) 
+2018-09-03 09:50:52.805 web-admin-kits [http-nio-9000-exec-5] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - ==> Parameters: 027171000(String)
+2018-09-03 09:50:52.826 web-admin-kits [http-nio-9000-exec-5] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - <==      Total: 1
+2018-09-03 09:50:52.827 web-admin-kits [http-nio-9000-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14d50c3c]
+2018-09-03 09:51:06.168 web-admin-kits [http-nio-9000-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-09-03 09:51:06.168 web-admin-kits [http-nio-9000-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23f3ddb6] was not registered for synchronization because synchronization is not active
+2018-09-03 09:51:06.188 web-admin-kits [http-nio-9000-exec-6] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@790525433 wrapping oracle.jdbc.driver.T4CConnection@1e9ac9ff] will not be managed by Spring
+2018-09-03 09:51:06.189 web-admin-kits [http-nio-9000-exec-6] DEBUG c.g.w.a.d.b.U.updateWebContactInfoByAccNum - ==>  Preparing: UPDATE go_ga_cust_tbl SET goacuemail=?,goacuemail2=?, goacucontactareacode=?,goacucontactareacode1=?, goacucontactphone=?,goacucontactphone1=? where goacumasterloginid in ( ? ) 
+2018-09-03 09:51:06.189 web-admin-kits [http-nio-9000-exec-6] DEBUG c.g.w.a.d.b.U.updateWebContactInfoByAccNum - ==> Parameters: 22(String), 22(String), 22(String), 22(String), 22(String), 22(String), 027171000(String)
+2018-09-03 09:51:06.240 web-admin-kits [http-nio-9000-exec-6] DEBUG c.g.w.a.d.b.U.updateWebContactInfoByAccNum - <==    Updates: 1
+2018-09-03 09:51:06.240 web-admin-kits [http-nio-9000-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23f3ddb6]
+2018-09-03 09:51:06.240 web-admin-kits [http-nio-9000-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-09-03 09:51:06.240 web-admin-kits [http-nio-9000-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72dc5075] was not registered for synchronization because synchronization is not active
+2018-09-03 09:51:06.240 web-admin-kits [http-nio-9000-exec-6] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1631401267 wrapping oracle.jdbc.driver.T4CConnection@1e9ac9ff] will not be managed by Spring
+2018-09-03 09:51:06.240 web-admin-kits [http-nio-9000-exec-6] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - ==>  Preparing: SELECT goacumasterloginid, goacuemail, goacuemail2, goacucontactareacode, goacucontactphone, goacucontactareacode1, goacucontactphone1 FROM go_ga_cust_tbl WHERE goacumasterloginid IN ( ? ) 
+2018-09-03 09:51:06.241 web-admin-kits [http-nio-9000-exec-6] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - ==> Parameters: 027171000(String)
+2018-09-03 09:51:06.261 web-admin-kits [http-nio-9000-exec-6] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - <==      Total: 1
+2018-09-03 09:51:06.261 web-admin-kits [http-nio-9000-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72dc5075]
+2018-09-03 09:51:09.871 web-admin-kits [http-nio-9000-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-09-03 09:51:09.871 web-admin-kits [http-nio-9000-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a632370] was not registered for synchronization because synchronization is not active
+2018-09-03 09:51:09.890 web-admin-kits [http-nio-9000-exec-7] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@243315784 wrapping oracle.jdbc.driver.T4CConnection@1e9ac9ff] will not be managed by Spring
+2018-09-03 09:51:09.891 web-admin-kits [http-nio-9000-exec-7] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - ==>  Preparing: SELECT goacumasterloginid, goacuemail, goacuemail2, goacucontactareacode, goacucontactphone, goacucontactareacode1, goacucontactphone1 FROM go_ga_cust_tbl WHERE goacumasterloginid IN ( ? ) 
+2018-09-03 09:51:09.891 web-admin-kits [http-nio-9000-exec-7] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - ==> Parameters: 027171000(String)
+2018-09-03 09:51:09.912 web-admin-kits [http-nio-9000-exec-7] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - <==      Total: 1
+2018-09-03 09:51:09.913 web-admin-kits [http-nio-9000-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a632370]
+2018-09-03 09:51:19.345 web-admin-kits [http-nio-9000-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-09-03 09:51:19.346 web-admin-kits [http-nio-9000-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55812c48] was not registered for synchronization because synchronization is not active
+2018-09-03 09:51:19.367 web-admin-kits [http-nio-9000-exec-8] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2138037903 wrapping oracle.jdbc.driver.T4CConnection@1e9ac9ff] will not be managed by Spring
+2018-09-03 09:51:19.367 web-admin-kits [http-nio-9000-exec-8] DEBUG c.g.w.a.d.b.U.updateWebContactInfoByFile - ==>  Preparing: begin UPDATE go_ga_cust_tbl SET goacuemail=?,goacuemail2=?, goacucontactareacode=?,goacucontactareacode1=?, goacucontactphone=?,goacucontactphone1=? WHERE goacumasterloginid=?; UPDATE go_ga_cust_tbl SET goacuemail=?,goacuemail2=?, goacucontactareacode=?,goacucontactareacode1=?, goacucontactphone=?,goacucontactphone1=? WHERE goacumasterloginid=?; UPDATE go_ga_cust_tbl SET goacuemail=?,goacuemail2=?, goacucontactareacode=?,goacucontactareacode1=?, goacucontactphone=?,goacucontactphone1=? WHERE goacumasterloginid=?; end; 
+2018-09-03 09:51:19.368 web-admin-kits [http-nio-9000-exec-8] DEBUG c.g.w.a.d.b.U.updateWebContactInfoByFile - ==> Parameters: email1(String), email2(String), areaCode1(String), areaCode2(String), phone1(String), phone2(String), accNum(String), (String), 777(String), 333(String), 555(String), 444(String), 666(String), 027171000(String), (String), b(String), c(String), e(String), d(String), f(String), 036571500(String)
+2018-09-03 09:51:19.477 web-admin-kits [http-nio-9000-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55812c48]
+2018-09-03 09:51:19.477 web-admin-kits [http-nio-9000-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-09-03 09:51:19.477 web-admin-kits [http-nio-9000-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42d4d2a9] was not registered for synchronization because synchronization is not active
+2018-09-03 09:51:19.478 web-admin-kits [http-nio-9000-exec-8] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1188903555 wrapping oracle.jdbc.driver.T4CConnection@1e9ac9ff] will not be managed by Spring
+2018-09-03 09:51:19.479 web-admin-kits [http-nio-9000-exec-8] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - ==>  Preparing: SELECT goacumasterloginid, goacuemail, goacuemail2, goacucontactareacode, goacucontactphone, goacucontactareacode1, goacucontactphone1 FROM go_ga_cust_tbl WHERE goacumasterloginid IN ( ? , ? , ? ) 
+2018-09-03 09:51:19.479 web-admin-kits [http-nio-9000-exec-8] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - ==> Parameters: accNum(String), 027171000(String), 036571500(String)
+2018-09-03 09:51:19.500 web-admin-kits [http-nio-9000-exec-8] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - <==      Total: 2
+2018-09-03 09:51:19.501 web-admin-kits [http-nio-9000-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42d4d2a9]
+2018-09-03 09:51:30.540 web-admin-kits [http-nio-9000-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-09-03 09:51:30.540 web-admin-kits [http-nio-9000-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51f69507] was not registered for synchronization because synchronization is not active
+2018-09-03 09:51:30.560 web-admin-kits [http-nio-9000-exec-9] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1597071689 wrapping oracle.jdbc.driver.T4CConnection@1e9ac9ff] will not be managed by Spring
+2018-09-03 09:51:30.561 web-admin-kits [http-nio-9000-exec-9] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - ==>  Preparing: SELECT goacumasterloginid, goacuemail, goacuemail2, goacucontactareacode, goacucontactphone, goacucontactareacode1, goacucontactphone1 FROM go_ga_cust_tbl WHERE goacumasterloginid IN ( ? ) 
+2018-09-03 09:51:30.561 web-admin-kits [http-nio-9000-exec-9] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - ==> Parameters: 027171000(String)
+2018-09-03 09:51:30.582 web-admin-kits [http-nio-9000-exec-9] DEBUG c.g.w.a.d.b.U.getUserContactInfoListByAccNum - <==      Total: 1
+2018-09-03 09:51:30.582 web-admin-kits [http-nio-9000-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51f69507]

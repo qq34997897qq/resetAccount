@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: web-admin-kits
+Implementation-Version: 1.0
+Built-By: arvin.feng
+Implementation-Vendor-Id: com.gotrade
+Build-Jdk: 1.8.0_65
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/web-admin-kits
+Created-By: Maven Integration for Eclipse
+

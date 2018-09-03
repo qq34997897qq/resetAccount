@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Reset Login</title>
+    <link rel="stylesheet" href="${request.contextPath}/layui/css/layui.css">
+    <link rel="stylesheet" href="${request.contextPath}/css/style.css">
+</head>
+<body class="body">
+<div class="layui-form layui-form-pane" action="">
+    <div class="layui-form-item" pane="">
+        <label class="layui-form-label">Reset By</label>
+        <div class="layui-input-block">
+         <input type="radio" name="type" value="acc_num" title="Acc Num" checked="">
+         <input type="radio" name="type" value="login_name" title="Login Name">
+        </div>
+    </div>
+     <div class="layui-form-item" pane="">
+        <label class="layui-form-label">From File</label>
+        <div class="layui-input-block">
+          <input type="radio" name="fromFile" lay-filter="fromFile" value="Y" title="Yes" id="byfile">
+            <input type="radio" name="fromFile" lay-filter="fromFile" value="N" title="No" checked="" id="byhand">
+        </div>
+    </div>
+    
+    <div class="layui-form-item">
+        <label class="layui-form-label">Account</label>
+        <div class="layui-input-block">
+            <input type="text" name="account"  id="account" autocomplete="off" placeholder="Please input acc number or login name, , multiple separate with ','" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">Account File</label>
+			<form id="uploadForm"  method="post" enctype="multipart/form-data" >
+	  	 		<input type="file" id="file" name="file" />
+			</form> 
+    </div> 
+    <div class="layui-form-item" pane="">
+        <label class="layui-form-label">First Login</label>
+        <div class="layui-input-block">
+            <input type="radio" name="firstLogin" value="Y" title="Yes">
+          <input type="radio" name="firstLogin" value="N" title="No" checked="">
+        </div>
+    </div>
+    <div class="layui-form-item"> 
+        <label class="layui-form-label">Login Attempt</label>
+        <div class="layui-input-block">
+            <input type="text" name="login_attempt" id="login_attempt" autocomplete="off" placeholder="0" class="layui-input">
+        </div>
+    </div>           
+    <div class="layui-form-item" pane="">
+        <label class="layui-form-label">Block Login</label>
+        <div class="layui-input-block">
+         <input type="radio" name="blockLogin" value="Y" title="Yes">
+          <input type="radio" name="blockLogin" value="N" title="No" checked="">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-inline">
+            <label class="layui-form-label">Last Change Password Time</label>
+            <div class="layui-input-block">
+                <input type="date" name="last_change_password_dt" id="last_change_password_dt" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+    </div>        
+         <div class="layui-form-item"> 
+        <label class="layui-form-label">Login Password</label>
+        <div class="layui-input-block">
+            <input type="text" name="password" id="password" autocomplete="off" value="12345678" class="layui-input">
+        </div>
+    </div>   
+ 	<div class="layui-form-item">
+        <div class="layui-input-block">
+            <button class="layui-btn" onclick="resetAttritubes()">Submit</button>
+            <button type="reset" class="layui-btn layui-btn-primary">Clear</button>
+        </div>
+    </div>
+</div>
+	<div id="fileResult"></div>
+
+<script src="${request.contextPath}/layui/layui.js" charset="utf-8"></script>
+<script src="${request.contextPath}/js/jquery.min.js" charset="utf-8"></script>
+<script src="${request.contextPath}/js/nav.js" charset="utf-8"></script>
+<script>
+
+layui.use('form', function(){
+  var form = layui.form;
+});
+
+function resetAttritubes(){//批量重置属性	
+	
+	if($('#byfile').is(':checked')){
+		resetAttritubesByFile();
+		//alert($(":radio[name='firstLogin']:checked").val());
+	}else {
+		resetAttritubesByHand(); 
+		
+	}
+	
+}
+
+
+function resetAttritubesByFile(){//通过文件设置属性
+	var url, data;
+	var date=new Date();
+	var account=$("#account").val();
+	var login_attempt=$("#login_attempt").val();
+	var is_first_login=$(":radio[name='firstLogin']:checked").val();
+	var is_block_login=$(":radio[name='blockLogin']:checked").val();
+	var input_date=$("#last_change_password_dt").val();
+	var last_change_password_dt=$("#last_change_password_dt").val()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();//加上当前时分秒
+	var password=$("#password").val();
+	 if($(":radio[name='type']:checked").val()=="acc_num"){
+		  url="/weblogin/update/login_info/by_file/acc_num";
+		  /* data=JSON.stringify({                    
+			  loginName: account,  
+			  loginAttempt: parseInt(login_attempt),  
+			  firstLogin: is_first_login,
+			  blockLogin: is_block_login,
+			  lastChangePwdTime: last_change_password_dt,
+			  password: password
+	      }); */
+	  }else{
+		  url="/weblogin/update/login_info/by_file/login_name";
+		  /* data=JSON.stringify({                    
+			  loginName: account,  
+			  loginAttempt: parseInt(login_attempt),  
+			  firstLogin: is_first_login,
+			  blockLogin: is_block_login,
+			  lastChangePwdTime: last_change_password_dt,
+			  password: password
+	      }); */
+	  }
+	var formData=new FormData($("#uploadForm")[0]);
+	
+	if($("#login_attempt").val()==""||$("#last_change_password_dt").val()==""||$("#file").val()==""||$("#password").val()==""){
+		alert("不能有空");
+	}
+	else{
+		
+		var date=new Date();
+		formData.append('webLoginInfo',$("#login_attempt").val());
+		formData.append('is_first_login',$(":radio[name='firstLogin']:checked").val());
+		formData.append('is_block_login',$(":radio[name='blockLogin']:checked").val());
+		formData.append('password',$("#password").val());
+		formData.append('last_change_password_dt',$("#last_change_password_dt").val()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getSeconds());
+		console.log(formData)
+	 	 $.ajax({ 
+				type:"POST",
+				contentType:"application/json; charset=utf-8",
+				dataType:"json", 
+				data:formData,
+				processData:false,
+				contentType:false,
+				url:url,
+				success:function(result){
+					showResult(result);				
+				}
+				
+			});
+			
+	}
+		
+}
+ 
+
+	function resetAttritubesByHand(){ //手动输入属性
+		var url, data;
+		var date=new Date();
+		var account=$("#account").val();
+		var login_attempt=$("#login_attempt").val();
+		var is_first_login=$(":radio[name='firstLogin']:checked").val();
+		var is_block_login=$(":radio[name='blockLogin']:checked").val();
+		var input_date=$("#last_change_password_dt").val();
+		var last_change_password_dt=$("#last_change_password_dt").val()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();//加上当前时分秒
+		var password=$("#password").val();
+	  if($(":radio[name='type']:checked").val()=="acc_num"){
+		  url="/weblogin/update/login_info/acc_num";
+		  data=JSON.stringify({                    
+			  accNum: account,  
+			  loginAttempt: parseInt(login_attempt),  
+			  firstLogin: is_first_login,
+			  blockLogin: is_block_login,
+			  lastChangePwdTime: last_change_password_dt,
+			  password: password
+	      });
+	  }else{
+		  url="/weblogin/update/login_info/login_name";
+		  data=JSON.stringify({                    
+			  loginName: account,  
+			  loginAttempt: parseInt(login_attempt),  
+			  firstLogin: is_first_login,
+			  blockLogin: is_block_login,
+			  lastChangePwdTime: last_change_password_dt,
+			  password: password
+	      });
+	  }
+	 	
+		if(account==""||login_attempt==""||input_date==""||password==""){
+			alert("不能有空");
+		}
+		else{
+			
+		 	 $.ajax({
+				type:"POST",
+				contentType:"application/json; charset=utf-8",  
+		        dataType:"json", 
+				data:data,
+				url:url,
+				success:function(result){
+					showResult(result);
+				}
+				
+			});
+		}
+	}
+
+	function showResult(result) { //结果显示
+		str = "<table class='layui-table'>"
+			+ "<colgroup>"
+			+ "    <col width='150'>"
+			+ "    <col width='150'>"
+			+ "</colgroup>"
+			+ "<thead>"
+			+ "<tr>"
+			+ "    <th align='center'>Login Name</th>"
+			+ "    <th align='center'>Acc Num</th>"
+			+ "</tr>"
+			+ "</thead>";
+	
+		$.each(result, function(index, item) {
+			str += "<tbody><tr>" + "<td>"
+			+ item.accNum + "</td>"
+			+ "<td>"
+			+ item.loginName + "</td>"
+			+ "</tr></tbody>"
+		});
+	
+		str += "</table>";
+		$("#fileResult").html(str);
+	}
+
+</script>
+</body>
+</html>

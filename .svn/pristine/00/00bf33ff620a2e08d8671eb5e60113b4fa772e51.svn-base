@@ -1,0 +1,38 @@
+package com.gotrade.web.admin.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.gotrade.web.admin.dao.portal.WebLoginDao;
+import com.gotrade.web.admin.domain.WebLoginInfo;
+import com.gotrade.web.admin.service.WebLoginService;
+
+@Service
+public class WebLoginServiceImpl implements WebLoginService {
+
+	@Autowired
+	private WebLoginDao webLoginDao;
+
+	@Override
+	public List<WebLoginInfo> getWebLoginInfoListByLoginName(String[] loginNames) {
+		return webLoginDao.getWebLoginInfoListByLoignName(loginNames);
+	}
+
+	@Override
+	public List<WebLoginInfo> getWebLoginInfoListByAccNum(String[] accNums) {
+		return webLoginDao.getWebLoginInfoListByAccNum(accNums);
+	}
+
+	@Override
+	public int updateWebLoginInfoByLoignName(String[] loginNames, WebLoginInfo webLoginInfo) {
+		return webLoginDao.updateWebLoginInfoByLoginName(loginNames, webLoginInfo);
+	}
+
+	@Override
+	public int updateWebLoginInfoByAccNum(String[] accNums, WebLoginInfo webLoginInfo) {
+		return webLoginDao.updateWebLoginInfoByAccNum(accNums, webLoginInfo);
+	}
+
+}

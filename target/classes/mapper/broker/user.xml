@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gotrade.web.admin.dao.broker.UserDao">
+
+	<resultMap id="userContactMapping" type="com.gotrade.web.admin.domain.UserContactInfo">
+		<result column="goacumasterloginid" property="accNum" javaType="String" />
+		<result column="goacuemail" property="email1" javaType="String" />
+		<result column="goacuemail2" property="email2" javaType="String" />
+		<result column="goacucontactareacode" property="areaCode1" javaType="String" />
+		<result column="goacucontactareacode1" property="areaCode2" javaType="String" />
+		<result column="goacucontactphone" property="phone1" javaType="String" />
+		<result column="goacucontactphone1" property="phone2" javaType="String" />
+	</resultMap>
+
+
+	<select id="getUserContactInfoListByAccNum" resultMap="userContactMapping">
+		SELECT goacumasterloginid, goacuemail, goacuemail2, goacucontactareacode, goacucontactphone, goacucontactareacode1, goacucontactphone1 FROM go_ga_cust_tbl 
+		WHERE goacumasterloginid IN
+		<foreach item="item" index="index" collection="array" open="(" separator="," close=")">
+			#{item}
+		</foreach>
+	</select>
+
+	<update id="updateWebContactInfoByAccNum">
+		UPDATE go_ga_cust_tbl SET
+		goacuemail=#{userContactInfo.email1},goacuemail2=#{userContactInfo.email2},
+		goacucontactareacode=#{userContactInfo.areaCode1},goacucontactareacode1=#{userContactInfo.areaCode2},
+		goacucontactphone=#{userContactInfo.phone1},goacucontactphone1=#{userContactInfo.phone2}
+		where goacumasterloginid in
+		<foreach item="item" index="index" collection="accNums" open="(" separator="," close=")">
+			#{item}
+		</foreach>
+	</update>
+
+	<update id="updateWebContactInfoByFile">
+		<foreach item="userContactInfo" index="index" collection="userContactInfos" open="begin" close="end;" >
+			UPDATE go_ga_cust_tbl SET
+			goacuemail=#{userContactInfo.email1},goacuemail2=#{userContactInfo.email2},
+			goacucontactareacode=#{userContactInfo.areaCode1},goacucontactareacode1=#{userContactInfo.areaCode2},
+			goacucontactphone=#{userContactInfo.phone1},goacucontactphone1=#{userContactInfo.phone2}
+			WHERE goacumasterloginid=#{userContactInfo.accNum};
+		</foreach>
+	</update>
+
+</mapper>
